@@ -1,5 +1,0 @@
-#let's start to learn.
-unpublish 仅删除远端的分支
-delete 删除本地和远端分支
-- 不能删除当前分支
-fix the merge
