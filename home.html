@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<style type="text/css">
+		body{background:#222;margin:8px;}
+		#logo{
+			width:69px;height:115px;position:absolute;background:url('logo.png') no-repeat;right:69px;top:43px;
+		}
+		#bar{
+			background: url('bar.png') no-repeat top;
+			width:200px;position: fixed;
+		}
+		#site{
+			background:url('site.jpg') no-repeat fixed top center #fff;
+			margin: 0 0 0 200px;
+			padding:0 85px;
+			box-shadow:0px 0px 50px #000;
+		}
+		#site .section{
+			padding:60px 0;margin:0 0 30px;
+		}
+		.introdution{
+			font-size:3em;
+			font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+		#work{display:block;overflow: hidden;padding:25px 2px 25px;position:relative;}
+		#work>li{
+			background:#fff;height:250px;display:block;border-radius:4px;list-style:none;position:relative;z-index:20;margin:0 0 35px;
+			z-index:20;
+		}
+		#work li:before,
+        #work li:after { 
+            bottom:12px;
+            left:10px;
+            width:20px;
+            height:20px;
+            border-radius:50%;
+            -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.4);   
+               -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.4);
+                    box-shadow:0 15px 10px rgba(0, 0, 0, 0.4);
+            -webkit-transform:rotate(-10deg);    
+               -moz-transform:rotate(-10deg);   
+                -ms-transform:rotate(-10deg);   
+                 -o-transform:rotate(-10deg);
+                    transform:rotate(-10deg);
+            content:"";
+            position:absolute; 
+            z-index:1;
+
+        }
+        
+        #work li:after {
+            right:10px; 
+            left:auto;
+            -webkit-transform:rotate(10deg);   
+               -moz-transform:rotate(10deg);  
+                -ms-transform:rotate(10deg);  
+                 -o-transform:rotate(10deg);
+                    transform:rotate(10deg);
+        }
+		#work>li>a{
+			display:block;height:240px;box-shadow:0px 1px 3px rgba(0,0,0,.35);border:5px solid #fff;padding:10px 10px;background:#dbdbdb;border-radius:4px;overflow:hidden;position:relative;
+		}
+		#work li a .left {
+			height: 240px;
+			border-left: 1px solid #dbdbdb;
+			position: absolute;
+			top: 1px;
+			left: 0px;
+			text-indent: -9999px;
+			overflow: hidden;
+			display: block;
+		}
+		#work li a .right {
+			height: 240px;
+			border-right: 1px solid #dbdbdb;
+			position: absolute;
+			top: 1px;
+			right: 0px;
+			text-indent: -9999px;
+			overflow: hidden;
+			display: block;
+		}
+		#work>li>a>img{
+			position:absolute;top:1px;left:50%;border:none;
+			margin:0 0 0 -400px;
+		}
+		a span{
+			position:absolute;display:block;opacity:0;top:0;left:0;height:240px;z-index:6;border:1px solid rgba(0,0,0,.1);
+		}
+	</style>
+</head>
+<body>
+ 	<div id="container">
+ 		<div id="bar">
+ 			<div id="me"></div>
+ 			<div id="logo"></div>
+ 		</div>
+ 		<div id="site">
+ 		<div class="section"><div class="introdution">Be bright..</div></div>
+ 		
+ 		<ul id="work">
+		<li><a href="" tartget="_blank" style="overflow:hidden;"><span>o</span><img src="3.jpg" alt=""></a></li>
+		<li><a href="" tartget="_blank"><span>o</span><img src="4.jpg" alt=""></a></li>
+		<li><a href="" tartget="_blank"><span>o</span><img src="5.jpg" alt=""></a></li>
+		</ul></div>
+ 	</div>
+	
+</body>
+</html>
